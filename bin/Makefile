@@ -227,6 +227,7 @@ Makefile: ../imageTestqml4.pro D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/win32-g++/q
 		D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/resources.prf \
 		D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/moc.prf \
 		D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/win32/opengl.prf \
+		D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/uic.prf \
 		D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/qmake_use.prf \
 		D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/file_copies.prf \
 		D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/win32/windows.prf \
@@ -236,6 +237,7 @@ Makefile: ../imageTestqml4.pro D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/win32-g++/q
 		D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/lex.prf \
 		../imageTestqml4.pro \
 		D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Quick.prl \
+		D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Widgets.prl \
 		D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Gui.prl \
 		D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Qml.prl \
 		D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Network.prl \
@@ -408,6 +410,7 @@ D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/qt.prf:
 D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/resources.prf:
 D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/moc.prf:
 D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/win32/opengl.prf:
+D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/uic.prf:
 D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/qmake_use.prf:
 D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/file_copies.prf:
 D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/win32/windows.prf:
@@ -417,6 +420,7 @@ D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/yacc.prf:
 D:/Qt5.12.0/5.12.0/mingw73_64/mkspecs/features/lex.prf:
 ../imageTestqml4.pro:
 D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Quick.prl:
+D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Widgets.prl:
 D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Gui.prl:
 D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Qml.prl:
 D:/Qt5.12.0/5.12.0/mingw73_64/lib/Qt5Network.prl:

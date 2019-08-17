@@ -3,9 +3,14 @@
 #include <qquickimageprovider.h>
 #include <QImage>
 #include <QPainter>
+#include "imageprocess.h"
 
 class ColorImageProvider : public QQuickImageProvider
 {
+
+public:
+    ImageProcess imgPro;
+
 public:
     ColorImageProvider()
         : QQuickImageProvider(QQuickImageProvider::Pixmap)
@@ -37,8 +42,9 @@ public:
         if(id == "hello")
         {
             QImage img;
-            //        img = QImage("images1/WindowBG.png");
-            img = QImage("C:/Users/SanguolianP/Desktop/imageTestqml4/qml/images1/maininterface.jpg");
+//                    img = QImage("images1/WindowBG.png");
+            img = QImage("C:/Users/SanguolianP/Desktop/imageTestqml4/qml/images/maininterface.jpg");
+//            img =
 
             pixmap = QPixmap::fromImage(img);
         }
