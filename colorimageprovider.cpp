@@ -3,13 +3,11 @@
 #include <qquickimageprovider.h>
 #include <QImage>
 #include <QPainter>
-#include "imageprocess.h"
+#include <QDebug>
+#include "externalvar.h"
 
 class ColorImageProvider : public QQuickImageProvider
 {
-
-public:
-    ImageProcess imgPro;
 
 public:
     ColorImageProvider()
@@ -43,14 +41,34 @@ public:
         {
             QImage img;
 //                    img = QImage("images1/WindowBG.png");
-            img = QImage("C:/Users/SanguolianP/Desktop/imageTestqml4/qml/images/maininterface.jpg");
-//            img =
 
+            if(imageGlobal.isNull())
+            {
+                img = QImage("C:/Users/SanguolianP/Desktop/imageTestqml4/qml/images/maininterface.jpg");
+            }else {
+                img = imageGlobal;
+            }
+//            qDebug()<<imgPro.processImage(imgPro.image);
+            qDebug()<<"imageGlobalimageGlobalimageGlobal/////////////////////////"<< imageGlobal;
             pixmap = QPixmap::fromImage(img);
         }
 
         return pixmap;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 };
 
 //class ImageProviderExtensionPlugin : public QQmlExtensionPlugin

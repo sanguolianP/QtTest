@@ -1,10 +1,9 @@
 #include "imageprocess.h"
-
-
+#include "externalvar.h"
 
 ImageProcess::ImageProcess()
 {
-
+//    imageRes = QImage("C:/Users/SanguolianP/Desktop/imageTestqml4/qml/images/maininterface.jpg");
 }
 
 ImageProcess::~ImageProcess()
@@ -24,10 +23,11 @@ QImage ImageProcess::openImage()
             if(!QImage(fileName).isNull())
             {
                 qDebug()<<fileName;
-                image = QImage(fileName);
-                qDebug()<<image;
+                imageRes = QImage(fileName);
+                imageGlobal = imageRes;
+                qDebug()<<imageRes;
 
-                return image;
+                return imageRes;
             }
         }
 }
@@ -35,4 +35,7 @@ QImage ImageProcess::openImage()
 QImage ImageProcess::processImage()
 {
 
+    qDebug()<<"imageResimageResimageResimageRes+++++++++++++++"<<imageRes;
+    qDebug("processed");
+    return imageRes;
 }

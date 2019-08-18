@@ -16,7 +16,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
     colorimageprovider.cpp \
-    imageprocess.cpp
+    imageprocess.cpp \
+    externalvar.cpp
 
 RESOURCES += qml.qrc \
     images.qrc
@@ -33,4 +34,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    imageprocess.h
+    imageprocess.h \
+    externalvar.h

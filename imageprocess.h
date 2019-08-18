@@ -17,13 +17,12 @@ public:
 
 public:
 //    QWidget *widget;
-    QImage image;
+    QImage imageRes;
 
 public:
 
     Q_INVOKABLE QImage openImage();
-    QImage processImage();
-
+    Q_INVOKABLE QImage processImage();
 
 signals:
 

@@ -21,22 +21,42 @@ Window {
         anchors.rightMargin: 100
         color: "#bbbbbb";
 
-        Image {
-            id:bg;
-            source: "qml/images/w.jpg";
-        }
+//        Image {
+//            id:bg;
+//            source: "qml/images/w.jpg";
+//        }
 
         Column
         {
-            Image {
-                id: img
-                source: "qml/images/q.jpg"
-            }
+//            Image {
+//                id: img
+//                source: "qml/images/q.jpg"
+//            }
 
 //            Image{ source: "image://colors/black" }
 //            Image{ source: "image://colors/blue" }
 
-            Image{ source: "image://colors/hello" }
+            Image
+            {
+                id: imgRes;
+                cache: false;
+
+                source: "image://colors/hello"
+            }
+            Timer
+            {
+                interval: 1000;
+                running: true;
+                repeat: true;
+                onTriggered:
+                {
+                    imgRes.source = "";
+                    imgRes.source = "image://colors/hello"
+                    console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<Fresh");
+                    imageItem.processImage();
+                    console.log("---------------------------Fresh");
+                }
+            }
 
         }
     }
@@ -59,9 +79,10 @@ Window {
         {
 //            qDebug("clicked");
             imageItem.openImage();
-
+//            imageItem.processImage();
         }
     }
+
 
 }
 
